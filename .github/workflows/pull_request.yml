@@ -1,0 +1,10 @@
+name: ".NET Build and Testing in Pull Request"
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    uses: ./.github/workflows/dotnet.yml
